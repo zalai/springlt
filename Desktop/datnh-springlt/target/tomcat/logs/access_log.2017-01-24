@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:35:52 +0700] "GET /SpringLT HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:35:53 +0700] "GET /SpringLT/ HTTP/1.1" 200 799 http-bio-8080-exec-3 1286
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:36:03 +0700] "GET /SpringLT/user/1.html HTTP/1.1" 302 - http-bio-8080-exec-4 3
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:36:03 +0700] "GET /SpringLT/login.jsp HTTP/1.1" 200 1563 http-bio-8080-exec-5 187
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:36:08 +0700] "GET /SpringLT/helloworld.html HTTP/1.1" 200 512 http-bio-8080-exec-6 117
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:36:16 +0700] "GET /SpringLT/helloworld.html HTTP/1.1" 200 512 http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:36:24 +0700] "GET /SpringLT/user/list.html HTTP/1.1" 302 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:36:24 +0700] "GET /SpringLT/login.jsp HTTP/1.1" 200 1563 http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:36:26 +0700] "POST /SpringLT/j_spring_security_check HTTP/1.1" 302 - http-bio-8080-exec-9 348
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:36:26 +0700] "GET /SpringLT/login.jsp?authfailed=true HTTP/1.1" 200 2094 http-bio-8080-exec-9 15
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:39:05 +0700] "POST /SpringLT/j_spring_security_check HTTP/1.1" 302 - http-bio-8080-exec-5 0
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:39:05 +0700] "GET /SpringLT/login.jsp?authfailed=true HTTP/1.1" 200 2094 http-bio-8080-exec-5 0
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:41:13 +0700] "GET /phpmyadmin/navigation.php?ajax_request=1&token=8e10b736fee395ab89cbadd618750fa2&aPath=cm9vdA%3D%3D.c3ByaW5nbHQ%3D&vPath=cm9vdA%3D%3D.c3ByaW5nbHQ%3D&pos=0&pos2_name=&pos2_value=&searchClause=&searchClause2=&_nocache=1485250873757762361 HTTP/1.1" 404 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:41:16 +0700] "GET /phpmyadmin/index.php?db=&table=&server=1&target=&token=8e10b736fee395ab89cbadd618750fa2 HTTP/1.1" 404 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [24/Jan/2017:16:41:48 +0700] "GET /phpmyadmin/ HTTP/1.1" 404 - http-bio-8080-exec-7 0

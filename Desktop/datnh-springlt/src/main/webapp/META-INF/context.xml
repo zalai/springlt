@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+	
+	<Resource
+		name="jdbc/SpringLTDS"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3307/springlt"
+		removeAbandoned="true"
+		maxActive="75"
+		maxIdle="30"
+		maxWait="-1"
+		username="root"
+		password="usbw"
+		validationQuery="select 1 from dual"
+	/>
+
+</Context>

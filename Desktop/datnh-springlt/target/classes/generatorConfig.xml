@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<classPathEntry location="mysql-connector-java-5.1.15-bin.jar" />
+
+	<context id="MysqlTables" targetRuntime="MyBatis3">
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3307/springlt" userId="root" password="usbw">
+		</jdbcConnection>
+		
+		<javaModelGenerator targetPackage="vn.laptrinh.domain"
+			targetProject="../java" />
+
+		<sqlMapGenerator targetPackage="vn.laptrinh.dao.xml"
+			targetProject="../java" />
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="vn.laptrinh.dao" targetProject="../java" />
+
+		<table tableName="users" domainObjectName="User"
+			enableSelectByExample="false" enableDeleteByExample="false"
+			enableCountByExample="false" enableUpdateByExample="false" >
+			<columnOverride column="id" javaType="Long" />
+			
+		</table>
+	</context>
+</generatorConfiguration>
