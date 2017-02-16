@@ -8,7 +8,7 @@
 
 	<context id="MysqlTables" targetRuntime="MyBatis3">
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://localhost:3307/springlt" userId="root" password="usbw">
+			connectionURL="jdbc:mysql://localhost:3307/mypham" userId="root" password="usbw">
 		</jdbcConnection>
 		
 		<javaModelGenerator targetPackage="vn.laptrinh.domain"

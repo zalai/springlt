@@ -3,11 +3,11 @@
 <Context>
 	
 	<Resource
-		name="jdbc/SpringLTDS"
+		name="jdbc/mypham"
 		auth="Container"
 		type="javax.sql.DataSource"
 		driverClassName="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost:3307/springlt"
+		url="jdbc:mysql://localhost:3307/mypham"
 		removeAbandoned="true"
 		maxActive="75"
 		maxIdle="30"

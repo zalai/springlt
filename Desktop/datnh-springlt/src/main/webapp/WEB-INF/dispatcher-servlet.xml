@@ -12,10 +12,12 @@
 	<context:component-scan base-package="vn.laptrinh.controller" />
 
 	<mvc:annotation-driven />
-	
+	<mvc:resources mapping="/**" location="/resources/" />
+
 	<!-- View resolver -->
-	<bean id="viewResolver"
-		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-		p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
 	
 </beans>

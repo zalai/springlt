@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ include file="/includes/taglibs.jsp"%>
+<%@ include file="/WEB-INF/includes/taglibs.jsp"%>
+<%@ taglib prefix="security"
+  uri="http://www.springframework.org/security/tags" %>
 
 <title>Welcome to Laptrinh.vn</title>
 <style>
@@ -15,10 +17,20 @@
 </style>
 <h1>User List</h1>
 
+<security:authorize access="hasRole('ROLE_USER')">
+    This text is only visible to a user
+    <br/>
+</security:authorize>
+<security:authorize access="hasRole('ROLE_ADMIN')">
+    This text is only visible to an admin
+    <br/>
+</security:authorize>
+123455665<sec:authentication property="principal.authorities"/>
+
 <div>
 	<h2>Sử dụng thư viện displaytag</h2>
 	
-	<display:table name="${userList}" class="simple wid100" id="user" requestURI="" pagesize="15" export="true" >
+	<display:table name="${userList}" class="simple wid100" id="user" requestURI="" pagesize="1" >
 		<display:column title="STT" class="stt" > <c:out value="${user_rowNum}"/> </display:column>
 		<display:column title="ID" property="id" />
 	    <display:column title="Username" property="username" />

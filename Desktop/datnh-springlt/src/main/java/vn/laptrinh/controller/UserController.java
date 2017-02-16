@@ -8,11 +8,13 @@
 // ----------------------------------------------------------------------------
 package vn.laptrinh.controller;
 
+import java.security.Principal;
 import java.util.List;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -51,8 +53,12 @@ public class UserController {
 	}
 
 	@RequestMapping("/user/list")
-	public String list(Model model) {
+	public String list(Model model, Principal principal) {
+		String userName = principal.getName();
 		
+		SecurityContextHolder.getContext().getAuthentication().getAuthorities();
+		System.out.println("User Name: " + userName);
+
 		List<User> userList = userService.getUserList();
 		
 		model.addAttribute("userList", userList);
